@@ -1,0 +1,122 @@
+#app{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-font-smothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+    /* text-align: center; */
+    color: teal;
+    margin-top: 60px; 
+}
+
+/* COMO SE USA CON UN SVG O NO SE PUEDE????? */
+
+.sprite{
+    display: inline-block;
+    background: url('chake.png') no-repeat;
+    width: 87px;
+    height: 91px;
+    margin-right: 80px;
+    background-position: 0px 0;
+}
+
+.tijera{
+    display: inline-block;
+    background: url('tijera.png') no-repeat;
+    width: 87px;
+    height: 91px;
+    margin-right: 80px;
+    background-position: 0px 0;
+}
+
+.papel{
+    display: inline-block;
+    background: url('papel.png') no-repeat;
+    width: 87px;
+    height: 91px;
+    margin-right: 80px;
+    background-position: 0px 0;
+}
+
+.sprite-pc{
+    display: inline-block;
+    background: url('chake.png') no-repeat;
+    width: 87px;
+    height: 91px;
+    background-position: 0px 0;
+    /* animation: move 0.52s steps(5) infinite; */
+    transform: scaleX(-1);
+}
+
+.step-1{
+    background-position: 0px 0;
+}
+.step-2{
+    background-position: -87px 0;
+}
+.step-3{
+    background-position: -174px 0;
+}
+.step-4{
+    background-position: -261px 0;
+}
+.step-5{
+    background-position: -348px 0;
+}
+
+.cachipun{
+    animation: move 0.52s steps(5) 1;
+}
+
+/* .tijera{
+    animation: move 0.52s steps(10,end) 3;
+} */
+
+/* movimiento con css con animation en contenedor EL NEXO ES MOVE */
+/* COMO SE HACEN DISTINTOS NEXOS??????? */
+@keyframes move {
+    to{
+        background-position: -2590px 0;
+    }
+}
+
+@keyframes movedos {
+    from{
+        background-position: -2590px 0;
+
+    }
+    to{
+        background-position: -2590px 0;
+    }
+}
+
+/* esto va de la mano con js */
+/* .step-2{
+    background-position: -510px 0;
+}
+
+.step-3{
+    background-position: -1020px 0;
+}
+
+.step-4{
+    background-position: -1540px 0;
+}
+
+.step-5{
+    background-position: -2040px 0;
+}
+
+.step-6{
+    background-position: -2560px 0;
+}
+
+.step-7{
+    background-position: -3070px 0;
+}
+
+.step-8{
+    background-position: -3590px 0;
+}
+
+.step-9{
+    background-position: 0 -510px;
+} */
